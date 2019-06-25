@@ -10,7 +10,6 @@ function App() {
     <div>
       <Jumbotron/>
       <HightlightsPanel/>
-      <EmailBar/>
       <Footer/>
     </div>
   );

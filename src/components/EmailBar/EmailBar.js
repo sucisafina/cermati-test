@@ -18,9 +18,11 @@ export default function EmailBar() {
                 such as design trends, development tools, UI/UX case studies
                 and reviews, and more. Sign up to my newsletter to get them all</p>
 
-                <form>
-                    <input type='text' id='email' placeholder='Your email....'></input>
-                    <button className='btn-submit'>Got It</button>
+                <form className='form-email'>
+                    <div>
+                        <input type='text' id='email' placeholder='Email address....'></input>
+                    </div>
+                    <input type="button" class="btn-submit" value="Input Button"></input>
                 </form>
                 
             </div>

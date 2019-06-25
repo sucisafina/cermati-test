@@ -2,11 +2,12 @@
     font-size: 12px;
     font-weight: 100;
     color: black;
-    background: #fff;
     font-weight: 400;
     line-height: 1.4em;
-    padding: 10px 20px;
+    padding: 10px 20px 0px;
+    
 }
+
 .notif-desc p{
     margin: 0;
 }
@@ -19,7 +20,36 @@
     background: #017cb8;
     color: white;
     border-radius: 5px;
-    font-size: 18px;
-    padding: 7px 7px;
-    margin-top: 8px;
+    font-size: 15px;
+}
+.btn-container{
+    padding-left: 20px;
+    padding-top: 0;
+}
+
+.notif-container{
+    background: #fff;
+    justify-content: center;
+    height: 90px;
+    /* position: fixed; */
+}
+
+
+@media only screen and (min-width: 960px){
+    .notif-container{
+        display: flex;
+        background: #fff;
+        flex-direction: row;
+        justify-content: center;
+        padding: 5px 200px;
+        position: fixed;
+        height: 60px;
+    }
+    .btn-notif{
+        height: 36px;
+        width: 80px;
+        margin: 0;
+        margin-top: 8px;
+        font-size: 19px;
+    }
 }

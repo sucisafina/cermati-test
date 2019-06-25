@@ -16,10 +16,8 @@
    font-weight: 200;
 }
 .item-icon{
-    position: relative;
-    top: 20px;
     font-size: 33px;
-
+    margin-top: 20px;
 }
 .item-desc{
     font-weight: 100;
