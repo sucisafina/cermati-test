@@ -1,0 +1,23 @@
+
+.footer-container {
+    text-align: center;
+    
+}
+.footer{
+    background: #040325;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer-item{
+    color: #858cb5;
+}
+
+@media only screen and (min-width:960px){
+    .footer{
+        height: 8em;
+    }
+}

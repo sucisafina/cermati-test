@@ -1,0 +1,25 @@
+.notif-desc{
+    font-size: 12px;
+    font-weight: 100;
+    color: black;
+    background: #fff;
+    font-weight: 400;
+    line-height: 1.4em;
+    padding: 10px 20px;
+}
+.notif-desc p{
+    margin: 0;
+}
+.notif-desc a{
+    color: blue;
+    text-decoration: none;
+}
+
+.btn-notif{
+    background: #017cb8;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 7px 7px;
+    margin-top: 8px;
+}

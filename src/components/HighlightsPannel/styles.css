@@ -1,0 +1,37 @@
+
+.highlight-title{
+    font-size: 30px;
+    font-weight: 300;
+    margin: 55px 10px 0; 
+    text-align: center; 
+}
+
+.highlight-desc{
+    margin: 10px 40px 50px;
+    line-height: 1.5em;
+    color: gray;
+    font-weight: 400;
+    text-align: center;
+}
+
+@media only screen and (min-width: 960px){
+    .highlight-desc{
+        margin: 10px 200px 50px;
+    }
+    .item-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 40px;
+    }
+  
+}
+
+@media only screen and (min-width: 1024px){
+    .item-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 1.5em;
+        grid-column-gap: 1.5em;
+        padding: 0px 40px;
+    }
+}
