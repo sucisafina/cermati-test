@@ -13,7 +13,7 @@
     text-align: center;
     font-size: 15px;
     color: aliceblue;
-    padding-top: 3em;
+    margin-top: 8em;
   }
 
   .overlay{
@@ -42,11 +42,11 @@
     font-weight: 100;
   }
 
-  img{
-    position: relative;
-    left: 30px;
-    top: 25px;
-  }
+img{
+  position: relative;
+  top: 89px;
+  left: 30px;
+}
 
 
 
@@ -61,7 +61,22 @@
   img{
     position: relative;
     left: 40px;
-    top: 20px;
+    top: 80px;
   }
 
+}
+
+@media only screen and (min-width: 1024px){
+  img{
+    position: relative;
+    left: 40px;
+    top: 100px;
+  }
+  .hero-image{
+      height: 500px;
+  }
+  .hero-container{
+    margin: 0;
+    padding-top: 100px;
+  }
 }

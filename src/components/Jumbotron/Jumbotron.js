@@ -1,18 +1,18 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import './styles.css'
 import Button from '../Button/Button';
-import NotificationBar from '../NotificationBar/NotificationBar'
+import NotificationBar from '../NotificationBar/NotificationBar';
 
-export default class Jumbotron extends Component {
-    render() {
-        return (
+
+export default function Jumbotron(){
+    const [state, setstate] = useState(true)
+
+    const handleToggle = () => setstate(false)
+    return (
         <section className="hero-image">
-            
             <div className="overlay">
-            <NotificationBar/>
-            <img src={require('../../assets/y-logo-white.png')} alt="Smiley face" height="42" width="42"></img>
-    
-            
+                {state ?  <NotificationBar handleClick={handleToggle}/>: null }   
+                <img src={require('../../assets/y-logo-white.png')} alt="Smiley face" height="42" width="42"></img>
                 <div className='hero-container'>
                     <p className='hero-title'>Hello! I'm Janto Motulo</p>
                     <p className='hero-desc1'>Consult, Design, and Develop Website</p>
@@ -21,7 +21,9 @@ export default class Jumbotron extends Component {
                     <Button/>
                 </div>
             </div>
+            
         </section>
-        )
-    }
+    )
 }
+
+

@@ -1,3 +1,5 @@
+
+
 .notif-desc{
     font-size: 12px;
     font-weight: 100;
@@ -16,24 +18,26 @@
     text-decoration: none;
 }
 
+
+.notif-container{
+    background: #fff;
+    justify-content: center;
+    height: 90px;
+    opacity: 1;
+    position: fixed;
+}
+
 .btn-notif{
     background: #017cb8;
     color: white;
     border-radius: 5px;
     font-size: 15px;
 }
+
 .btn-container{
     padding-left: 20px;
     padding-top: 0;
 }
-
-.notif-container{
-    background: #fff;
-    justify-content: center;
-    height: 90px;
-    /* position: fixed; */
-}
-
 
 @media only screen and (min-width: 960px){
     .notif-container{

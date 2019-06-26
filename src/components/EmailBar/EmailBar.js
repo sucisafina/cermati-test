@@ -5,11 +5,12 @@ import './styles.css'
 
 
 
-export default function EmailBar() {
+export default function EmailBar(props) {
+    
     return (
         <div className='email-bar'>
             <div className='x-btn'>
-                <FontAwesomeIcon icon={faTimes}/>
+                <FontAwesomeIcon icon={faTimes} onClick={props.handleToggle}  />
             </div>
             
             <div className='email-desc'>
@@ -19,10 +20,12 @@ export default function EmailBar() {
                 and reviews, and more. Sign up to my newsletter to get them all</p>
 
                 <form className='form-email'>
-                    <div>
+                    <div className='input-email'>
                         <input type='text' id='email' placeholder='Email address....'></input>
                     </div>
-                    <input type="button" class="btn-submit" value="Input Button"></input>
+                    <div className='input-btn'>
+                        <input type="button" className="btn-submit" value="Input Button"></input>
+                    </div>
                 </form>
                 
             </div>
