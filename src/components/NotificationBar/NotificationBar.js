@@ -1,12 +1,12 @@
-import React, {useState} from 'react'
+import React from 'react'
 import './styles.css'
 
 export default function NotificationBar(props) {
 
-    function handleToggle(){
+    const handleClick = () => {
         const e = document.getElementById('notif');
-        e.classList.remove('notif-desc');
-        e.classList.add('is-open')
+        e.classList.remove('notif-container');
+        e.classList.add('is-open');
     }
     return (
         <div id='notif' className='notif-container'>
@@ -16,7 +16,7 @@ export default function NotificationBar(props) {
                 <a href="#"> Terms of Service</a></p>
             </div>
             <div className='btn-container'>
-                <button className='btn-notif' onClick={() => handleToggle()}>Got It</button>
+                <button className='btn-notif' onClick={handleClick}>Got It</button>
             </div> 
         </div> 
         

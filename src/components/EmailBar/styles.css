@@ -4,7 +4,6 @@
     position: absolute;
     top: 144em;
     height: 265px;
-    
 }
 
 .btn-x{
@@ -50,9 +49,9 @@ form {
     background: orange;
 }
 
-.is-open {
-    height: 0;
-    transition: height 0.2s ease; 
+.open {
+    opacity: 0;
+    transition: 0.5s; 
 }
 
 @media only screen and (min-width: 960px){
@@ -61,9 +60,9 @@ form {
         width: 500px;
         height: 200px;
     }
-    .is-open {
-        height: 0;
-        overflow: hidden;
+    .open {
+        opacity: 0;
+        /* overflow: hidden; */
         transition: 0.5s;
     }
 

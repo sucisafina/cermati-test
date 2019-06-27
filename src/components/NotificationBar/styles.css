@@ -22,8 +22,6 @@
     transition: 0.5s;
 }
 
-
-
 .notif-container{
     background: #fff;
     justify-content: center;
@@ -56,7 +54,7 @@
         position: fixed;
         height: 50px;
     }
-    .is-open {
+    .is-open, .is-open > div {
         height: 0%;
         overflow: hidden;
         transition: 0.5s;

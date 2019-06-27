@@ -19,12 +19,11 @@ export default class Emailbar extends Component{
     handleToggle = ()=>{
         const e = document.getElementById('email');
         e.classList.remove('email-container');
-        e.classList.add('is-open')
+        e.classList.add('open')
     }
     render(){
 
         return (
-            
             <div id='email' className='email-wrapper'>
                 <FontAwesomeIcon icon={faTimes} className='btn-x' onClick={this.handleToggle}/>
                 <div className='email-container'>
