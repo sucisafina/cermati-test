@@ -4,7 +4,7 @@
     position: absolute;
     top: 144em;
     height: 265px;
-    transition: all .5s ease-out;
+    
 }
 
 .btn-x{
@@ -52,9 +52,8 @@ form {
 
 .is-open {
     height: 0;
-    overflow: hidden;
+    transition: height 0.2s ease; 
 }
-
 
 @media only screen and (min-width: 960px){
     .email-wrapper{

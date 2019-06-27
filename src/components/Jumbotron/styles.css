@@ -76,7 +76,6 @@ img{
       height: 500px;
   }
   .hero-container{
-    margin: 0;
-    padding-top: 100px;
+    margin-top: 11em;
   }
 }
