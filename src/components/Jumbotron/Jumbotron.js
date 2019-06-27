@@ -5,13 +5,10 @@ import NotificationBar from '../NotificationBar/NotificationBar';
 
 
 export default function Jumbotron(){
-    const [state, setstate] = useState(true)
-
-    const handleToggle = () => setstate(false)
     return (
         <section className="hero-image">
             <div className="overlay">
-                {state ?  <NotificationBar handleClick={handleToggle}/>: null }   
+                <NotificationBar/>  
                 <img src={require('../../assets/y-logo-white.png')} alt="Smiley face" height="42" width="42"></img>
                 <div className='hero-container'>
                     <p className='hero-title'>Hello! I'm Janto Motulo</p>

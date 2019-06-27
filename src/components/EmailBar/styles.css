@@ -4,12 +4,14 @@
     top: 146rem;
     width: 100%;
 }
-.slideUp{
-    height: 0;
+
+
+#email-bar.is-open {
     opacity: 0;
-    transition: 1.2s ease-out;
+    transition: 0.5s;
 }
 
+  
 .x-btn{
     display: flex;
     justify-content: flex-end;
