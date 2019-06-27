@@ -1,40 +1,31 @@
-import React, {useState} from 'react'
-import { faTimes } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import React from 'react'
 import './styles.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTimes } from '@fortawesome/free-solid-svg-icons'
 
 
+export default function Emailbar (){
 
-export default function EmailBar(props) {
-    
     function handleToggle(){
-        const e = document.getElementById('email-bar');
-        e.classList.toggle('is-open')
+        const e = document.getElementById('email');
+        e.classList.remove('email-container');
+        e.classList.add('is-open')
     }
-    return (
-
-            <div id='email-bar' className='email-bar'>
-                <div className='x-btn'>
-                    <FontAwesomeIcon icon={faTimes} onClick={()=>handleToggle()}  />
+        return (
+            <div id='email' className='email-wrapper'>
+                <FontAwesomeIcon icon={faTimes} className='btn-x' onClick={() => handleToggle()}/>
+                <div className='email-container'>
+                    <p className='email-header'>Get latest updates in web technologies</p>
+                    <p className='email-desc'>I write articles related to web technologies, such as design trends, development tools,
+                    UI/UX case studies and reviews, and more. Sign up to my newsletter to get them all.</p>
                 </div>
+
+                <form>
+                    <input type='text' id='email-input' placeholder='Email address . . .' />
+
+                    <button className='btn-submit'>Count me in!</button>
+                </form>
                 
-                <div className='email-desc'>
-                    <p className='email-header'>Get the latest updates in Web Technologies</p>
-                    <p>I write articles related to Web Technologies,
-                    such as design trends, development tools, UI/UX case studies
-                    and reviews, and more. Sign up to my newsletter to get them all</p>
-
-                    <form className='form-email'>
-                        <div className='input-email'>
-                            <input type='text' id='email' placeholder='Email address....'></input>
-                        </div>
-                        <div className='input-btn'>
-                            <input type="button" className="btn-submit" value="Input Button"></input>
-                        </div>
-                    </form>
-                    
-                </div>
-            </div>
-    
-    )
+            </div> 
+        )
 }

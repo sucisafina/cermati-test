@@ -5,7 +5,8 @@ export default function NotificationBar(props) {
 
     function handleToggle(){
         const e = document.getElementById('notif');
-        e.classList.toggle('is-open')
+        e.classList.remove('notif-desc');
+        e.classList.add('is-open')
     }
     return (
         <div id='notif' className='notif-container'>
