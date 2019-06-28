@@ -1,9 +1,12 @@
 .email-wrapper {
     background: #007bc1;
     padding: 0px 20px;
+    height: 277px;
+}
+
+#email{
     position: absolute;
-    top: 144em;
-    height: 265px;
+    bottom: -110em;
 }
 
 .btn-x{
@@ -50,20 +53,27 @@ form {
 }
 
 .open {
-    opacity: 0;
-    transition: 0.5s; 
+    /* opacity: 0; */
+    height: 0;
+    transition: 0.4s ease-in; 
+    overflow: hidden;
 }
 
 @media only screen and (min-width: 960px){
     .email-wrapper{
-        top: 71em;
         width: 500px;
         height: 200px;
+        position: relative;
     }
+    #email{
+        position: absolute;
+        bottom: -30px;
+    }
+
     .open {
-        opacity: 0;
-        /* overflow: hidden; */
-        transition: 0.5s;
+        height: 0;
+        transition: 0.4s ease-in; 
+        overflow: hidden;
     }
 
     form{
@@ -77,4 +87,12 @@ form {
     #email-input {
         width: 360px;
     }
+}
+
+@media only screen and (min-width: 1025px){
+    #email{
+        position: absolute;
+        bottom: -40em;
+    }
+
 }

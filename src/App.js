@@ -10,8 +10,9 @@ function App() {
   return (
     <div>
       <Jumbotron/>
-        <HightlightsPanel/>
+      <HightlightsPanel/>
       <Footer/>
+      
     </div>
   );
 }

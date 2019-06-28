@@ -9,7 +9,7 @@ export default function Jumbotron(){
         <section className="hero-image">
             <div className="overlay">
                 <NotificationBar/>  
-                <img src={require('../../assets/y-logo-white.png')} alt="Smiley face" height="42" width="42"></img>
+                <img src={require('../../assets/y-logo-white.png')} alt="Logo" height="42" width="42"></img>
                 
                 <div id='container'>
                     <div className='hero-container'>

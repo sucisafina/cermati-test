@@ -1,9 +1,8 @@
 import React from 'react'
 import './styles.css'
-import Emailbar from '../Emailbar/Emailbar';
 import { faCopyright } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import Emailbar from '../Emailbar/Emailbar'
 export default function Footer() {
 
     return (
@@ -13,7 +12,7 @@ export default function Footer() {
                     <FontAwesomeIcon icon={faCopyright}/> 2018 Janto Motulo. All rights reserved
                 </div> 
             </div>
-           <Emailbar/>
+            <Emailbar/>        
         </>
     )
 }
